@@ -72,7 +72,7 @@ namespace NewMideaProgram
         All.Machine.Media.H1H2 H1H2 = new All.Machine.Media.H1H2(cMain.mSysSet.ComH1H2, All.Machine.Media.AllMachine.Machines.商用三管制);
         All.Machine.Media.XY XY = new All.Machine.Media.XY(cMain.mSysSet.ComXY, All.Machine.Media.AllMachine.Machines.商用三管制);
         All.Machine.Media.K1K2 K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用三管制);
-
+        All.Machine.Media.OA OA = new All.Machine.Media.OA(cMain.mSysSet.ComOA);
 
         public static bool[] ReadPlcMValue = new bool[cMain.DataPlcMPoint];
 
@@ -137,7 +137,7 @@ namespace NewMideaProgram
         Label[] nowLabel = new Label[cMain.DataShow];
         BlinkLed[] XinHao = new BlinkLed[6];
         BlinkLed[] KaiGuan = new BlinkLed[11];
-        BlinkLed[] BaoHu = new BlinkLed[7];
+        BlinkLed[] ledProtect = new BlinkLed[7];
         Label[] lblProtect = new Label[7];
         public frmMain()//构造函数
         {
@@ -157,9 +157,9 @@ namespace NewMideaProgram
             {
                 KaiGuan[i] = (BlinkLed)this.Controls.Find(string.Format("blinkLed{0}", i + 7), true)[0];
             }
-            for (int i = 0; i < BaoHu.Length; i++)
+            for (int i = 0; i < ledProtect.Length; i++)
             {
-                BaoHu[i] = (BlinkLed)this.Controls.Find(string.Format("blinkLed{0}", i + 18), true)[0];
+                ledProtect[i] = (BlinkLed)this.Controls.Find(string.Format("ledProtect{0}", i + 1), true)[0];
                 lblProtect[i] = (Label)this.Controls.Find(string.Format("lblProtect{0}", i + 1), true)[0];
                 lblProtect[i].Text = Enum.GetNames(typeof(All.Machine.Media.K1K2.Protects))[i];
             }
@@ -1929,27 +1929,10 @@ namespace NewMideaProgram
                         break;
                 }
             }
-            if (cMain.mModeSet.XinHao[3] || cMain.mModeSet.XinHao[5])
+            if(cMain.mModeSet.XinHao[3])//OA
             {
-                switch (cMain.JiQiStr[cMain.IndexLanguage].Split(',')[cMain.mModeSet.JiQi])
-                {
-                    case "V4+":
-                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用V4);
-                        K1K2.Open();
-                        break;
-                    case "V6":
-                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用V6);
-                        K1K2.Open();
-                        break;
-                    case "两管制":
-                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用两管制);
-                        K1K2.Open();
-                        break;
-                    case "三管制":
-                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用三管制);
-                        K1K2.Open();
-                        break;
-                }
+                OA = new All.Machine.Media.OA(cMain.mSysSet.ComOA);
+                OA.Open();
             }
             if (cMain.mModeSet.XinHao[4])
             {
@@ -1970,6 +1953,28 @@ namespace NewMideaProgram
                     case "三管制":
                         H1H2 = new All.Machine.Media.H1H2(cMain.mSysSet.ComH1H2, All.Machine.Media.AllMachine.Machines.商用三管制);
                         H1H2.Open();
+                        break;
+                }
+            }
+            if ( cMain.mModeSet.XinHao[5])//K1K2
+            {
+                switch (cMain.JiQiStr[cMain.IndexLanguage].Split(',')[cMain.mModeSet.JiQi])
+                {
+                    case "V4+":
+                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用V4);
+                        K1K2.Open();
+                        break;
+                    case "V6":
+                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用V6);
+                        K1K2.Open();
+                        break;
+                    case "两管制":
+                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用两管制);
+                        K1K2.Open();
+                        break;
+                    case "三管制":
+                        K1K2 = new All.Machine.Media.K1K2(cMain.mSysSet.ComK1K2, All.Machine.Media.AllMachine.Machines.商用三管制);
+                        K1K2.Open();
                         break;
                 }
             }
@@ -2230,6 +2235,10 @@ namespace NewMideaProgram
             {
                 XY.Close();
             }
+            if (cMain.mModeSet.XinHao[3])
+            {
+                OA.Close();
+            }
             if (cMain.mModeSet.XinHao[4])
             {
                 H1H2.Close();
@@ -2297,9 +2306,9 @@ namespace NewMideaProgram
                                     }
                                     break;
                                 case 3:
-                                    if (K1K2 != null)
+                                    if (OA != null)
                                     {
-                                        XinHao[i].Color = K1K2.OAConn ? Color.Green : Color.Red;
+                                        XinHao[i].Color = OA.Conn ? Color.Green : Color.Red;
                                     }
                                     break;
                                 case 4:
@@ -2312,12 +2321,11 @@ namespace NewMideaProgram
                                     if (K1K2 != null)
                                     {
                                         XinHao[i].Color = K1K2.Conn ? Color.Green : Color.Red;
-                                        for (int j = 0; j < BaoHu.Length; j++)
+                                        for (int j = 0; j < ledProtect.Length; j++)
                                         {
-                                            BaoHu[i].Color = K1K2.Protect[lblProtect[j].Text] ? Color.Red : Color.Black;
+                                            ledProtect[j].Color = K1K2.Protect[lblProtect[j].Text] ? Color.Red : Color.Black;
                                         }
                                         lblSpeed.Text = K1K2.Speed;
-                                        lblModeStep.Text = K1K2.Step;
                                         lblSanGuanZhiError.Text = K1K2.ReadError;
                                     }
                                     break;
@@ -2332,7 +2340,6 @@ namespace NewMideaProgram
                 else
                 {
                     lblSpeed.Text = "";
-                    lblModeStep.Text = "";
                     for (int i = 0; i < XinHao.Length; i++)
                     {
                         XinHao[i].Color = Color.Black;
@@ -2341,9 +2348,9 @@ namespace NewMideaProgram
                     {
                         KaiGuan[i].Color = Color.Black;
                     }
-                    for (int i = 0; i < BaoHu.Length; i++)
+                    for (int i = 0; i < ledProtect.Length; i++)
                     {
-                        BaoHu[i].Color = Color.Black;
+                        ledProtect[i].Color = Color.Black;
                     }
                 }
                 DataGridViewRow dr = dataGridNow.Rows[0];

@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblResult = new System.Windows.Forms.Label();
             this.MainLoop = new System.Windows.Forms.Timer(this.components);
             this.DataErrorFlush = new System.Windows.Forms.Timer(this.components);
@@ -130,45 +130,38 @@
             this.lblDataShow6 = new System.Windows.Forms.Label();
             this.lblDataShow7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.quXianControl1 = new System.Drawing.QuXianControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label74 = new System.Windows.Forms.Label();
             this.lblSanGuanZhiError = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label90 = new System.Windows.Forms.Label();
+            this.lblDataShow50 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblDataShow37 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.blinkLed24 = new NewMideaProgram.BlinkLed();
             this.lblProtect7 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
-            this.blinkLed23 = new NewMideaProgram.BlinkLed();
             this.lblProtect6 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.lblProtect5 = new System.Windows.Forms.Label();
-            this.blinkLed22 = new NewMideaProgram.BlinkLed();
             this.lblProtect4 = new System.Windows.Forms.Label();
-            this.blinkLed21 = new NewMideaProgram.BlinkLed();
             this.lblProtect3 = new System.Windows.Forms.Label();
-            this.blinkLed20 = new NewMideaProgram.BlinkLed();
             this.lblProtect2 = new System.Windows.Forms.Label();
-            this.blinkLed19 = new NewMideaProgram.BlinkLed();
             this.lblProtect1 = new System.Windows.Forms.Label();
-            this.blinkLed18 = new NewMideaProgram.BlinkLed();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.blinkLed17 = new NewMideaProgram.BlinkLed();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.blinkLed16 = new NewMideaProgram.BlinkLed();
             this.label60 = new System.Windows.Forms.Label();
-            this.blinkLed15 = new NewMideaProgram.BlinkLed();
             this.label61 = new System.Windows.Forms.Label();
-            this.blinkLed14 = new NewMideaProgram.BlinkLed();
             this.label62 = new System.Windows.Forms.Label();
-            this.blinkLed13 = new NewMideaProgram.BlinkLed();
             this.label63 = new System.Windows.Forms.Label();
-            this.blinkLed12 = new NewMideaProgram.BlinkLed();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
@@ -180,31 +173,22 @@
             this.label72 = new System.Windows.Forms.Label();
             this.lblModeStep = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.blinkLed11 = new NewMideaProgram.BlinkLed();
             this.label36 = new System.Windows.Forms.Label();
-            this.blinkLed10 = new NewMideaProgram.BlinkLed();
             this.label33 = new System.Windows.Forms.Label();
-            this.blinkLed9 = new NewMideaProgram.BlinkLed();
             this.label23 = new System.Windows.Forms.Label();
-            this.blinkLed8 = new NewMideaProgram.BlinkLed();
             this.label22 = new System.Windows.Forms.Label();
-            this.blinkLed7 = new NewMideaProgram.BlinkLed();
             this.label38 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label90 = new System.Windows.Forms.Label();
-            this.lblDataShow50 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.lblDataShow49 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.lblDataShow48 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblDataShow37 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblDataShow38 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -230,7 +214,6 @@
             this.dataGridNow = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.chkEmpty = new All.Control.Metro.CheckBox();
             this.label101 = new System.Windows.Forms.Label();
             this.LblStep = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -242,7 +225,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label99 = new System.Windows.Forms.Label();
-            this.chkAnGui = new All.Control.Metro.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblBar = new System.Windows.Forms.TextBox();
@@ -257,16 +239,34 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.chkEmpty = new All.Control.Metro.CheckBox();
+            this.chkAnGui = new All.Control.Metro.CheckBox();
+            this.quXianControl1 = new System.Drawing.QuXianControl();
+            this.ledProtect7 = new NewMideaProgram.BlinkLed();
+            this.ledProtect6 = new NewMideaProgram.BlinkLed();
+            this.ledProtect5 = new NewMideaProgram.BlinkLed();
+            this.ledProtect4 = new NewMideaProgram.BlinkLed();
+            this.ledProtect3 = new NewMideaProgram.BlinkLed();
+            this.ledProtect2 = new NewMideaProgram.BlinkLed();
+            this.ledProtect1 = new NewMideaProgram.BlinkLed();
+            this.blinkLed17 = new NewMideaProgram.BlinkLed();
+            this.blinkLed16 = new NewMideaProgram.BlinkLed();
+            this.blinkLed15 = new NewMideaProgram.BlinkLed();
+            this.blinkLed14 = new NewMideaProgram.BlinkLed();
+            this.blinkLed13 = new NewMideaProgram.BlinkLed();
+            this.blinkLed12 = new NewMideaProgram.BlinkLed();
+            this.blinkLed11 = new NewMideaProgram.BlinkLed();
+            this.blinkLed10 = new NewMideaProgram.BlinkLed();
+            this.blinkLed9 = new NewMideaProgram.BlinkLed();
+            this.blinkLed8 = new NewMideaProgram.BlinkLed();
+            this.blinkLed7 = new NewMideaProgram.BlinkLed();
             this.blinkLed3 = new NewMideaProgram.BlinkLed();
             this.blinkLed4 = new NewMideaProgram.BlinkLed();
             this.blinkLed5 = new NewMideaProgram.BlinkLed();
             this.blinkLed1 = new NewMideaProgram.BlinkLed();
             this.blinkLed2 = new NewMideaProgram.BlinkLed();
-            this.label1 = new System.Windows.Forms.Label();
             this.blinkLed6 = new NewMideaProgram.BlinkLed();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label74 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.panMdi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -289,6 +289,8 @@
             this.panElect.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -302,8 +304,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblResult
@@ -468,14 +468,14 @@
             this.dataGridStep.AllowUserToAddRows = false;
             this.dataGridStep.AllowUserToDeleteRows = false;
             this.dataGridStep.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridStep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridStep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridStep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dataGridStep, "dataGridStep");
             this.dataGridStep.MultiSelect = false;
@@ -1128,35 +1128,6 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             // 
-            // quXianControl1
-            // 
-            resources.ApplyResources(this.quXianControl1, "quXianControl1");
-            this.quXianControl1.DrawBackColor = System.Drawing.Color.Black;
-            this.quXianControl1.Image = ((System.Drawing.Bitmap)(resources.GetObject("quXianControl1.Image")));
-            this.quXianControl1.IsMainNet = true;
-            this.quXianControl1.IsMinorNet = true;
-            this.quXianControl1.IsTwoYAxis = true;
-            this.quXianControl1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.quXianControl1.LineFont = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.quXianControl1.LinePen = System.Drawing.Color.Green;
-            this.quXianControl1.MainDashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.quXianControl1.MinorDashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.quXianControl1.Name = "quXianControl1";
-            this.quXianControl1.Origin = new System.Drawing.Point(40, 20);
-            this.quXianControl1.PartLineFont = new System.Drawing.Font("宋体", 8F, System.Drawing.FontStyle.Bold);
-            this.quXianControl1.RightChanelNameWidth = 70;
-            this.quXianControl1.XAxisMax = 750D;
-            this.quXianControl1.XAxisMin = 0D;
-            this.quXianControl1.XAxisTitle = "时间(S)";
-            this.quXianControl1.XPart = 15;
-            this.quXianControl1.YAxisMax = 4.5D;
-            this.quXianControl1.YAxisMaxRight = 60D;
-            this.quXianControl1.YAxisMin = 0D;
-            this.quXianControl1.YAxisMinRight = 0D;
-            this.quXianControl1.YAxisTitle = "压力(Mpa)";
-            this.quXianControl1.YAxisTitleRight = "电流(A)";
-            this.quXianControl1.YPart = 15;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel16);
@@ -1169,6 +1140,30 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel16.Controls.Add(this.label71);
+            this.panel16.Controls.Add(this.lblSpeed);
+            this.panel16.Controls.Add(this.blinkLed17);
+            this.panel16.Controls.Add(this.label69);
+            this.panel16.Controls.Add(this.label70);
+            this.panel16.Controls.Add(this.label62);
+            this.panel16.Controls.Add(this.label68);
+            this.panel16.Controls.Add(this.blinkLed13);
+            this.panel16.Controls.Add(this.label74);
+            this.panel16.Controls.Add(this.lblSanGuanZhiError);
+            resources.ApplyResources(this.panel16, "panel16");
+            this.panel16.Name = "panel16";
+            // 
+            // label74
+            // 
+            this.label74.BackColor = System.Drawing.Color.LightGray;
+            this.label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.label74, "label74");
+            this.label74.Name = "label74";
+            // 
             // lblSanGuanZhiError
             // 
             this.lblSanGuanZhiError.BackColor = System.Drawing.Color.White;
@@ -1178,26 +1173,68 @@
             this.lblSanGuanZhiError.ForeColor = System.Drawing.Color.Red;
             this.lblSanGuanZhiError.Name = "lblSanGuanZhiError";
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel9.Controls.Add(this.label90);
+            this.panel9.Controls.Add(this.lblDataShow50);
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.lblDataShow37);
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // label90
+            // 
+            this.label90.BackColor = System.Drawing.Color.LightGray;
+            this.label90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label90.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.label90, "label90");
+            this.label90.Name = "label90";
+            // 
+            // lblDataShow50
+            // 
+            this.lblDataShow50.BackColor = System.Drawing.Color.White;
+            this.lblDataShow50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDataShow50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.lblDataShow50, "lblDataShow50");
+            this.lblDataShow50.Name = "lblDataShow50";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.LightGray;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // lblDataShow37
+            // 
+            this.lblDataShow37.BackColor = System.Drawing.Color.White;
+            this.lblDataShow37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDataShow37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.lblDataShow37, "lblDataShow37");
+            this.lblDataShow37.Name = "lblDataShow37";
+            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.blinkLed24);
+            this.panel18.Controls.Add(this.ledProtect7);
             this.panel18.Controls.Add(this.lblProtect7);
             this.panel18.Controls.Add(this.label85);
-            this.panel18.Controls.Add(this.blinkLed23);
+            this.panel18.Controls.Add(this.ledProtect6);
             this.panel18.Controls.Add(this.lblProtect6);
             this.panel18.Controls.Add(this.label73);
             this.panel18.Controls.Add(this.lblProtect5);
-            this.panel18.Controls.Add(this.blinkLed22);
+            this.panel18.Controls.Add(this.ledProtect5);
             this.panel18.Controls.Add(this.lblProtect4);
-            this.panel18.Controls.Add(this.blinkLed21);
+            this.panel18.Controls.Add(this.ledProtect4);
             this.panel18.Controls.Add(this.lblProtect3);
-            this.panel18.Controls.Add(this.blinkLed20);
+            this.panel18.Controls.Add(this.ledProtect3);
             this.panel18.Controls.Add(this.lblProtect2);
-            this.panel18.Controls.Add(this.blinkLed19);
+            this.panel18.Controls.Add(this.ledProtect2);
             this.panel18.Controls.Add(this.lblProtect1);
-            this.panel18.Controls.Add(this.blinkLed18);
+            this.panel18.Controls.Add(this.ledProtect1);
             this.panel18.Controls.Add(this.label79);
             this.panel18.Controls.Add(this.label80);
             this.panel18.Controls.Add(this.label81);
@@ -1205,14 +1242,6 @@
             this.panel18.Controls.Add(this.label83);
             resources.ApplyResources(this.panel18, "panel18");
             this.panel18.Name = "panel18";
-            // 
-            // blinkLed24
-            // 
-            this.blinkLed24.Color = System.Drawing.Color.Empty;
-            this.blinkLed24.InterVal = 100;
-            resources.ApplyResources(this.blinkLed24, "blinkLed24");
-            this.blinkLed24.Name = "blinkLed24";
-            this.blinkLed24.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // lblProtect7
             // 
@@ -1229,14 +1258,6 @@
             this.label85.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label85, "label85");
             this.label85.Name = "label85";
-            // 
-            // blinkLed23
-            // 
-            this.blinkLed23.Color = System.Drawing.Color.Empty;
-            this.blinkLed23.InterVal = 100;
-            resources.ApplyResources(this.blinkLed23, "blinkLed23");
-            this.blinkLed23.Name = "blinkLed23";
-            this.blinkLed23.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // lblProtect6
             // 
@@ -1262,14 +1283,6 @@
             resources.ApplyResources(this.lblProtect5, "lblProtect5");
             this.lblProtect5.Name = "lblProtect5";
             // 
-            // blinkLed22
-            // 
-            this.blinkLed22.Color = System.Drawing.Color.Empty;
-            this.blinkLed22.InterVal = 100;
-            resources.ApplyResources(this.blinkLed22, "blinkLed22");
-            this.blinkLed22.Name = "blinkLed22";
-            this.blinkLed22.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // lblProtect4
             // 
             this.lblProtect4.BackColor = System.Drawing.Color.LightGray;
@@ -1277,14 +1290,6 @@
             this.lblProtect4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.lblProtect4, "lblProtect4");
             this.lblProtect4.Name = "lblProtect4";
-            // 
-            // blinkLed21
-            // 
-            this.blinkLed21.Color = System.Drawing.Color.Empty;
-            this.blinkLed21.InterVal = 100;
-            resources.ApplyResources(this.blinkLed21, "blinkLed21");
-            this.blinkLed21.Name = "blinkLed21";
-            this.blinkLed21.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // lblProtect3
             // 
@@ -1294,14 +1299,6 @@
             resources.ApplyResources(this.lblProtect3, "lblProtect3");
             this.lblProtect3.Name = "lblProtect3";
             // 
-            // blinkLed20
-            // 
-            this.blinkLed20.Color = System.Drawing.Color.Empty;
-            this.blinkLed20.InterVal = 100;
-            resources.ApplyResources(this.blinkLed20, "blinkLed20");
-            this.blinkLed20.Name = "blinkLed20";
-            this.blinkLed20.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // lblProtect2
             // 
             this.lblProtect2.BackColor = System.Drawing.Color.LightGray;
@@ -1310,14 +1307,6 @@
             resources.ApplyResources(this.lblProtect2, "lblProtect2");
             this.lblProtect2.Name = "lblProtect2";
             // 
-            // blinkLed19
-            // 
-            this.blinkLed19.Color = System.Drawing.Color.Empty;
-            this.blinkLed19.InterVal = 100;
-            resources.ApplyResources(this.blinkLed19, "blinkLed19");
-            this.blinkLed19.Name = "blinkLed19";
-            this.blinkLed19.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // lblProtect1
             // 
             this.lblProtect1.BackColor = System.Drawing.Color.LightGray;
@@ -1325,14 +1314,6 @@
             this.lblProtect1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.lblProtect1, "lblProtect1");
             this.lblProtect1.Name = "lblProtect1";
-            // 
-            // blinkLed18
-            // 
-            this.blinkLed18.Color = System.Drawing.Color.Empty;
-            this.blinkLed18.InterVal = 100;
-            resources.ApplyResources(this.blinkLed18, "blinkLed18");
-            this.blinkLed18.Name = "blinkLed18";
-            this.blinkLed18.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label79
             // 
@@ -1378,34 +1359,22 @@
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.blinkLed17);
-            this.panel17.Controls.Add(this.label69);
-            this.panel17.Controls.Add(this.label70);
+            this.panel17.Controls.Add(this.label72);
+            this.panel17.Controls.Add(this.lblModeStep);
             this.panel17.Controls.Add(this.label59);
             this.panel17.Controls.Add(this.blinkLed16);
             this.panel17.Controls.Add(this.label60);
             this.panel17.Controls.Add(this.blinkLed15);
             this.panel17.Controls.Add(this.label61);
             this.panel17.Controls.Add(this.blinkLed14);
-            this.panel17.Controls.Add(this.label62);
-            this.panel17.Controls.Add(this.blinkLed13);
             this.panel17.Controls.Add(this.label63);
             this.panel17.Controls.Add(this.blinkLed12);
             this.panel17.Controls.Add(this.label64);
             this.panel17.Controls.Add(this.label65);
             this.panel17.Controls.Add(this.label66);
             this.panel17.Controls.Add(this.label67);
-            this.panel17.Controls.Add(this.label68);
             resources.ApplyResources(this.panel17, "panel17");
             this.panel17.Name = "panel17";
-            // 
-            // blinkLed17
-            // 
-            this.blinkLed17.Color = System.Drawing.Color.Empty;
-            this.blinkLed17.InterVal = 100;
-            resources.ApplyResources(this.blinkLed17, "blinkLed17");
-            this.blinkLed17.Name = "blinkLed17";
-            this.blinkLed17.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label69
             // 
@@ -1431,14 +1400,6 @@
             resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
             // 
-            // blinkLed16
-            // 
-            this.blinkLed16.Color = System.Drawing.Color.Empty;
-            this.blinkLed16.InterVal = 100;
-            resources.ApplyResources(this.blinkLed16, "blinkLed16");
-            this.blinkLed16.Name = "blinkLed16";
-            this.blinkLed16.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label60
             // 
             this.label60.BackColor = System.Drawing.Color.LightGray;
@@ -1446,14 +1407,6 @@
             this.label60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
-            // 
-            // blinkLed15
-            // 
-            this.blinkLed15.Color = System.Drawing.Color.Empty;
-            this.blinkLed15.InterVal = 100;
-            resources.ApplyResources(this.blinkLed15, "blinkLed15");
-            this.blinkLed15.Name = "blinkLed15";
-            this.blinkLed15.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label61
             // 
@@ -1463,14 +1416,6 @@
             resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
             // 
-            // blinkLed14
-            // 
-            this.blinkLed14.Color = System.Drawing.Color.Empty;
-            this.blinkLed14.InterVal = 100;
-            resources.ApplyResources(this.blinkLed14, "blinkLed14");
-            this.blinkLed14.Name = "blinkLed14";
-            this.blinkLed14.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label62
             // 
             this.label62.BackColor = System.Drawing.Color.LightGray;
@@ -1479,14 +1424,6 @@
             resources.ApplyResources(this.label62, "label62");
             this.label62.Name = "label62";
             // 
-            // blinkLed13
-            // 
-            this.blinkLed13.Color = System.Drawing.Color.Empty;
-            this.blinkLed13.InterVal = 100;
-            resources.ApplyResources(this.blinkLed13, "blinkLed13");
-            this.blinkLed13.Name = "blinkLed13";
-            this.blinkLed13.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label63
             // 
             this.label63.BackColor = System.Drawing.Color.LightGray;
@@ -1494,14 +1431,6 @@
             this.label63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label63, "label63");
             this.label63.Name = "label63";
-            // 
-            // blinkLed12
-            // 
-            this.blinkLed12.Color = System.Drawing.Color.Empty;
-            this.blinkLed12.InterVal = 100;
-            resources.ApplyResources(this.blinkLed12, "blinkLed12");
-            this.blinkLed12.Name = "blinkLed12";
-            this.blinkLed12.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label64
             // 
@@ -1547,10 +1476,6 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.label71);
-            this.panel15.Controls.Add(this.lblSpeed);
-            this.panel15.Controls.Add(this.label72);
-            this.panel15.Controls.Add(this.lblModeStep);
             this.panel15.Controls.Add(this.label37);
             this.panel15.Controls.Add(this.blinkLed11);
             this.panel15.Controls.Add(this.label36);
@@ -1610,14 +1535,6 @@
             resources.ApplyResources(this.label37, "label37");
             this.label37.Name = "label37";
             // 
-            // blinkLed11
-            // 
-            this.blinkLed11.Color = System.Drawing.Color.Empty;
-            this.blinkLed11.InterVal = 100;
-            resources.ApplyResources(this.blinkLed11, "blinkLed11");
-            this.blinkLed11.Name = "blinkLed11";
-            this.blinkLed11.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label36
             // 
             this.label36.BackColor = System.Drawing.Color.LightGray;
@@ -1625,14 +1542,6 @@
             this.label36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
-            // 
-            // blinkLed10
-            // 
-            this.blinkLed10.Color = System.Drawing.Color.Empty;
-            this.blinkLed10.InterVal = 100;
-            resources.ApplyResources(this.blinkLed10, "blinkLed10");
-            this.blinkLed10.Name = "blinkLed10";
-            this.blinkLed10.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label33
             // 
@@ -1642,14 +1551,6 @@
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
             // 
-            // blinkLed9
-            // 
-            this.blinkLed9.Color = System.Drawing.Color.Empty;
-            this.blinkLed9.InterVal = 100;
-            resources.ApplyResources(this.blinkLed9, "blinkLed9");
-            this.blinkLed9.Name = "blinkLed9";
-            this.blinkLed9.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label23
             // 
             this.label23.BackColor = System.Drawing.Color.LightGray;
@@ -1658,14 +1559,6 @@
             resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
             // 
-            // blinkLed8
-            // 
-            this.blinkLed8.Color = System.Drawing.Color.Empty;
-            this.blinkLed8.InterVal = 100;
-            resources.ApplyResources(this.blinkLed8, "blinkLed8");
-            this.blinkLed8.Name = "blinkLed8";
-            this.blinkLed8.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
             // label22
             // 
             this.label22.BackColor = System.Drawing.Color.LightGray;
@@ -1673,14 +1566,6 @@
             this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            // 
-            // blinkLed7
-            // 
-            this.blinkLed7.Color = System.Drawing.Color.Empty;
-            this.blinkLed7.InterVal = 100;
-            resources.ApplyResources(this.blinkLed7, "blinkLed7");
-            this.blinkLed7.Name = "blinkLed7";
-            this.blinkLed7.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
             // label38
             // 
@@ -1753,22 +1638,6 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
-            // label90
-            // 
-            this.label90.BackColor = System.Drawing.Color.LightGray;
-            this.label90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label90.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label90, "label90");
-            this.label90.Name = "label90";
-            // 
-            // lblDataShow50
-            // 
-            this.lblDataShow50.BackColor = System.Drawing.Color.White;
-            this.lblDataShow50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDataShow50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.lblDataShow50, "lblDataShow50");
-            this.lblDataShow50.Name = "lblDataShow50";
-            // 
             // label88
             // 
             this.label88.BackColor = System.Drawing.Color.LightGray;
@@ -1809,14 +1678,6 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.LightGray;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.LightGray;
@@ -1824,14 +1685,6 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            // 
-            // lblDataShow37
-            // 
-            this.lblDataShow37.BackColor = System.Drawing.Color.White;
-            this.lblDataShow37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDataShow37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.lblDataShow37, "lblDataShow37");
-            this.lblDataShow37.Name = "lblDataShow37";
             // 
             // label13
             // 
@@ -2008,23 +1861,23 @@
             // 
             this.dataGridNow.AllowUserToAddRows = false;
             this.dataGridNow.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridNow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridNow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridNow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridNow.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridNow.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.dataGridNow, "dataGridNow");
             this.dataGridNow.MultiSelect = false;
             this.dataGridNow.Name = "dataGridNow";
@@ -2057,16 +1910,6 @@
             this.panel3.Controls.Add(this.label12);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            // 
-            // chkEmpty
-            // 
-            this.chkEmpty.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.chkEmpty.Checked = false;
-            this.chkEmpty.CheckText = "跳过";
-            resources.ApplyResources(this.chkEmpty, "chkEmpty");
-            this.chkEmpty.Name = "chkEmpty";
-            this.chkEmpty.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.chkEmpty.UnCheckText = "测试";
             // 
             // label101
             // 
@@ -2156,16 +1999,6 @@
             this.label99.BackColor = System.Drawing.Color.Transparent;
             this.label99.Name = "label99";
             this.label99.Tag = "1";
-            // 
-            // chkAnGui
-            // 
-            this.chkAnGui.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.chkAnGui.Checked = false;
-            this.chkAnGui.CheckText = "跳过";
-            resources.ApplyResources(this.chkAnGui, "chkAnGui");
-            this.chkAnGui.Name = "chkAnGui";
-            this.chkAnGui.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.chkAnGui.UnCheckText = "测试";
             // 
             // label10
             // 
@@ -2278,6 +2111,206 @@
             this.label6.Name = "label6";
             this.label6.Tag = "1";
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            this.label1.Tag = "1";
+            // 
+            // chkEmpty
+            // 
+            this.chkEmpty.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.chkEmpty.Checked = false;
+            this.chkEmpty.CheckText = "跳过";
+            resources.ApplyResources(this.chkEmpty, "chkEmpty");
+            this.chkEmpty.Name = "chkEmpty";
+            this.chkEmpty.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.chkEmpty.UnCheckText = "测试";
+            // 
+            // chkAnGui
+            // 
+            this.chkAnGui.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.chkAnGui.Checked = false;
+            this.chkAnGui.CheckText = "跳过";
+            resources.ApplyResources(this.chkAnGui, "chkAnGui");
+            this.chkAnGui.Name = "chkAnGui";
+            this.chkAnGui.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.chkAnGui.UnCheckText = "测试";
+            // 
+            // quXianControl1
+            // 
+            resources.ApplyResources(this.quXianControl1, "quXianControl1");
+            this.quXianControl1.DrawBackColor = System.Drawing.Color.Black;
+            this.quXianControl1.Image = ((System.Drawing.Bitmap)(resources.GetObject("quXianControl1.Image")));
+            this.quXianControl1.IsMainNet = true;
+            this.quXianControl1.IsMinorNet = true;
+            this.quXianControl1.IsTwoYAxis = true;
+            this.quXianControl1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.quXianControl1.LineFont = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.quXianControl1.LinePen = System.Drawing.Color.Green;
+            this.quXianControl1.MainDashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.quXianControl1.MinorDashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.quXianControl1.Name = "quXianControl1";
+            this.quXianControl1.Origin = new System.Drawing.Point(40, 20);
+            this.quXianControl1.PartLineFont = new System.Drawing.Font("宋体", 8F, System.Drawing.FontStyle.Bold);
+            this.quXianControl1.RightChanelNameWidth = 70;
+            this.quXianControl1.XAxisMax = 750D;
+            this.quXianControl1.XAxisMin = 0D;
+            this.quXianControl1.XAxisTitle = "时间(S)";
+            this.quXianControl1.XPart = 15;
+            this.quXianControl1.YAxisMax = 4.5D;
+            this.quXianControl1.YAxisMaxRight = 60D;
+            this.quXianControl1.YAxisMin = 0D;
+            this.quXianControl1.YAxisMinRight = 0D;
+            this.quXianControl1.YAxisTitle = "压力(Mpa)";
+            this.quXianControl1.YAxisTitleRight = "电流(A)";
+            this.quXianControl1.YPart = 15;
+            // 
+            // ledProtect7
+            // 
+            this.ledProtect7.Color = System.Drawing.Color.Empty;
+            this.ledProtect7.InterVal = 100;
+            resources.ApplyResources(this.ledProtect7, "ledProtect7");
+            this.ledProtect7.Name = "ledProtect7";
+            this.ledProtect7.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect6
+            // 
+            this.ledProtect6.Color = System.Drawing.Color.Empty;
+            this.ledProtect6.InterVal = 100;
+            resources.ApplyResources(this.ledProtect6, "ledProtect6");
+            this.ledProtect6.Name = "ledProtect6";
+            this.ledProtect6.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect5
+            // 
+            this.ledProtect5.Color = System.Drawing.Color.Empty;
+            this.ledProtect5.InterVal = 100;
+            resources.ApplyResources(this.ledProtect5, "ledProtect5");
+            this.ledProtect5.Name = "ledProtect5";
+            this.ledProtect5.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect4
+            // 
+            this.ledProtect4.Color = System.Drawing.Color.Black;
+            this.ledProtect4.InterVal = 100;
+            resources.ApplyResources(this.ledProtect4, "ledProtect4");
+            this.ledProtect4.Name = "ledProtect4";
+            this.ledProtect4.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect3
+            // 
+            this.ledProtect3.Color = System.Drawing.Color.Empty;
+            this.ledProtect3.InterVal = 100;
+            resources.ApplyResources(this.ledProtect3, "ledProtect3");
+            this.ledProtect3.Name = "ledProtect3";
+            this.ledProtect3.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect2
+            // 
+            this.ledProtect2.Color = System.Drawing.Color.Empty;
+            this.ledProtect2.InterVal = 100;
+            resources.ApplyResources(this.ledProtect2, "ledProtect2");
+            this.ledProtect2.Name = "ledProtect2";
+            this.ledProtect2.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // ledProtect1
+            // 
+            this.ledProtect1.Color = System.Drawing.Color.Empty;
+            this.ledProtect1.InterVal = 100;
+            resources.ApplyResources(this.ledProtect1, "ledProtect1");
+            this.ledProtect1.Name = "ledProtect1";
+            this.ledProtect1.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed17
+            // 
+            this.blinkLed17.Color = System.Drawing.Color.Empty;
+            this.blinkLed17.InterVal = 100;
+            resources.ApplyResources(this.blinkLed17, "blinkLed17");
+            this.blinkLed17.Name = "blinkLed17";
+            this.blinkLed17.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed16
+            // 
+            this.blinkLed16.Color = System.Drawing.Color.Empty;
+            this.blinkLed16.InterVal = 100;
+            resources.ApplyResources(this.blinkLed16, "blinkLed16");
+            this.blinkLed16.Name = "blinkLed16";
+            this.blinkLed16.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed15
+            // 
+            this.blinkLed15.Color = System.Drawing.Color.Empty;
+            this.blinkLed15.InterVal = 100;
+            resources.ApplyResources(this.blinkLed15, "blinkLed15");
+            this.blinkLed15.Name = "blinkLed15";
+            this.blinkLed15.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed14
+            // 
+            this.blinkLed14.Color = System.Drawing.Color.Empty;
+            this.blinkLed14.InterVal = 100;
+            resources.ApplyResources(this.blinkLed14, "blinkLed14");
+            this.blinkLed14.Name = "blinkLed14";
+            this.blinkLed14.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed13
+            // 
+            this.blinkLed13.Color = System.Drawing.Color.Empty;
+            this.blinkLed13.InterVal = 100;
+            resources.ApplyResources(this.blinkLed13, "blinkLed13");
+            this.blinkLed13.Name = "blinkLed13";
+            this.blinkLed13.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed12
+            // 
+            this.blinkLed12.Color = System.Drawing.Color.Empty;
+            this.blinkLed12.InterVal = 100;
+            resources.ApplyResources(this.blinkLed12, "blinkLed12");
+            this.blinkLed12.Name = "blinkLed12";
+            this.blinkLed12.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed11
+            // 
+            this.blinkLed11.Color = System.Drawing.Color.Empty;
+            this.blinkLed11.InterVal = 100;
+            resources.ApplyResources(this.blinkLed11, "blinkLed11");
+            this.blinkLed11.Name = "blinkLed11";
+            this.blinkLed11.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed10
+            // 
+            this.blinkLed10.Color = System.Drawing.Color.Empty;
+            this.blinkLed10.InterVal = 100;
+            resources.ApplyResources(this.blinkLed10, "blinkLed10");
+            this.blinkLed10.Name = "blinkLed10";
+            this.blinkLed10.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed9
+            // 
+            this.blinkLed9.Color = System.Drawing.Color.Empty;
+            this.blinkLed9.InterVal = 100;
+            resources.ApplyResources(this.blinkLed9, "blinkLed9");
+            this.blinkLed9.Name = "blinkLed9";
+            this.blinkLed9.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed8
+            // 
+            this.blinkLed8.Color = System.Drawing.Color.Empty;
+            this.blinkLed8.InterVal = 100;
+            resources.ApplyResources(this.blinkLed8, "blinkLed8");
+            this.blinkLed8.Name = "blinkLed8";
+            this.blinkLed8.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
+            // blinkLed7
+            // 
+            this.blinkLed7.Color = System.Drawing.Color.Empty;
+            this.blinkLed7.InterVal = 100;
+            resources.ApplyResources(this.blinkLed7, "blinkLed7");
+            this.blinkLed7.Name = "blinkLed7";
+            this.blinkLed7.State = NewMideaProgram.BlinkLed.LedState.On;
+            // 
             // blinkLed3
             // 
             this.blinkLed3.Color = System.Drawing.Color.Empty;
@@ -2318,13 +2351,6 @@
             this.blinkLed2.Name = "blinkLed2";
             this.blinkLed2.State = NewMideaProgram.BlinkLed.LedState.On;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.label1.Tag = "1";
-            // 
             // blinkLed6
             // 
             this.blinkLed6.Color = System.Drawing.Color.Empty;
@@ -2332,32 +2358,6 @@
             resources.ApplyResources(this.blinkLed6, "blinkLed6");
             this.blinkLed6.Name = "blinkLed6";
             this.blinkLed6.State = NewMideaProgram.BlinkLed.LedState.On;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panel9.Controls.Add(this.label90);
-            this.panel9.Controls.Add(this.lblDataShow50);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.lblDataShow37);
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // label74
-            // 
-            this.label74.BackColor = System.Drawing.Color.LightGray;
-            this.label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label74, "label74");
-            this.label74.Name = "label74";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel16.Controls.Add(this.label74);
-            this.panel16.Controls.Add(this.lblSanGuanZhiError);
-            resources.ApplyResources(this.panel16, "panel16");
-            this.panel16.Name = "panel16";
             // 
             // frmMain
             // 
@@ -2393,6 +2393,8 @@
             this.panElect.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
@@ -2408,8 +2410,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2618,22 +2618,22 @@
         private System.Windows.Forms.Label lblModeStep;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Panel panel18;
-        private BlinkLed blinkLed24;
+        private BlinkLed ledProtect7;
         private System.Windows.Forms.Label lblProtect7;
         private System.Windows.Forms.Label label85;
-        private BlinkLed blinkLed23;
+        private BlinkLed ledProtect6;
         private System.Windows.Forms.Label lblProtect6;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label lblProtect5;
-        private BlinkLed blinkLed22;
+        private BlinkLed ledProtect5;
         private System.Windows.Forms.Label lblProtect4;
-        private BlinkLed blinkLed21;
+        private BlinkLed ledProtect4;
         private System.Windows.Forms.Label lblProtect3;
-        private BlinkLed blinkLed20;
+        private BlinkLed ledProtect3;
         private System.Windows.Forms.Label lblProtect2;
-        private BlinkLed blinkLed19;
+        private BlinkLed ledProtect2;
         private System.Windows.Forms.Label lblProtect1;
-        private BlinkLed blinkLed18;
+        private BlinkLed ledProtect1;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
